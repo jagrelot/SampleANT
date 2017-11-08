@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Example Test Suite]" allow-return-values="true">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Example Test Suite]" allow-return-values="true">
   <test name="Example tests(failed)">
     <classes>
       <class name="main.ExampleTest">
         <methods>
-          <include name="loginTest"/>
-          <include name="beforeTestsetUp"/>
+          <include name="createAccounts"/>
         </methods>
       </class> <!-- main.ExampleTest -->
     </classes>
