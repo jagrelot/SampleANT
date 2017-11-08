@@ -66,11 +66,7 @@ public class ExampleTest {
 		}
 		
 		Assert.assertEquals(count, 2, "Error: The number of accounts created does not match");
-		
-	}
-	
-	@AfterTest
-	public void closeDriver(){
 		chromeDriver.close();
 	}
+	
 }
