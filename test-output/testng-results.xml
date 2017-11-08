@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Example Test Suite" duration-ms="9350" started-at="2017-11-08T15:55:10Z" finished-at="2017-11-08T15:55:19Z">
+    <groups>
+    </groups>
+    <test name="Example tests" duration-ms="9350" started-at="2017-11-08T15:55:10Z" finished-at="2017-11-08T15:55:19Z">
+      <class name="main.ExampleTest">
+        <test-method status="PASS" signature="beforeTestsetUp()[pri:0, instance:main.ExampleTest@5f150435]" name="beforeTestsetUp" is-config="true" duration-ms="3136" started-at="2017-11-08T10:55:10Z" finished-at="2017-11-08T10:55:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestsetUp -->
+        <test-method status="PASS" signature="testA()[pri:0, instance:main.ExampleTest@5f150435]" name="testA" duration-ms="0" started-at="2017-11-08T10:55:13Z" finished-at="2017-11-08T10:55:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:main.ExampleTest@5f150435]" name="loginTest" duration-ms="6198" started-at="2017-11-08T10:55:13Z" description="Verify Login" finished-at="2017-11-08T10:55:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- main.ExampleTest -->
+    </test> <!-- Example tests -->
+  </suite> <!-- Example Test Suite -->
+</testng-results>
