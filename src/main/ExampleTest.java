@@ -1,7 +1,6 @@
 package main;
  
 import java.util.ArrayList;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,19 +8,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
  
 public class ExampleTest {
 	
 	public WebDriver chromeDriver;
- 
-    @Test
-    public void testA() throws Exception {
- 
-        System.out.println("Test finished.");
- 
-    }
     
     @BeforeTest
 	public void beforeTestsetUp(){
@@ -73,6 +66,11 @@ public class ExampleTest {
 		}
 		
 		Assert.assertEquals(count, 2, "Error: The number of accounts created does not match");
-
+		
+	}
+	
+	@AfterTest
+	public void closeDriver(){
+		chromeDriver.close();
 	}
 }
