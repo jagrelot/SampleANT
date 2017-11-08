@@ -15,14 +15,14 @@ public class ExampleTest {
 	public WebDriver chromeDriver;
     
 	@Test(priority=1,description="Setup Driver")
-	public void beforeTestsetUp() throws Exception{
+	public void beforeTestsetUp(){
 		
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		chromeDriver = new ChromeDriver();
 	}
 	
 	@Test(priority=2,description="Verify Login")
-	public void loginTest() throws Exception{
+	public void loginTest(){
 		
 		WebElement  userName;
 		WebElement  passWord;
@@ -47,7 +47,7 @@ public class ExampleTest {
 		int 	   count = 0;
 		WebDriverWait wait = new WebDriverWait(chromeDriver, 10);
 		ArrayList<String> acctsToCreate = new ArrayList<String>();
-		acctsToCreate.add("Test Account TestNG - 1 - Jenkins JA");
+		acctsToCreate.add("Test Account TestNG - 1 - Jenkins");
 		acctsToCreate.add("Test Account TestNG - 2 - Jenkins");
 	
 		for (String acct : acctsToCreate ) {
