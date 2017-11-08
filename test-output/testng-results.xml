@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19572" started-at="2017-11-08T20:10:27Z" finished-at="2017-11-08T20:10:47Z">
+  <suite name="Example Test Suite" duration-ms="18150" started-at="2017-11-08T20:23:54Z" finished-at="2017-11-08T20:24:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19572" started-at="2017-11-08T20:10:27Z" finished-at="2017-11-08T20:10:47Z">
+    <test name="Example tests" duration-ms="18150" started-at="2017-11-08T20:23:54Z" finished-at="2017-11-08T20:24:12Z">
       <class name="main.ExampleTest">
-        <test-method status="PASS" signature="beforeTestsetUp()[pri:1, instance:main.ExampleTest@6d00a15d]" name="beforeTestsetUp" duration-ms="2886" started-at="2017-11-08T15:10:27Z" description="Setup Driver" finished-at="2017-11-08T15:10:30Z">
+        <test-method status="PASS" signature="beforeTestsetUp()[pri:0, instance:main.ExampleTest@5f150435]" name="beforeTestsetUp" is-config="true" duration-ms="2912" started-at="2017-11-08T15:23:54Z" finished-at="2017-11-08T15:23:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestsetUp -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:main.ExampleTest@6d00a15d]" name="loginTest" duration-ms="6424" started-at="2017-11-08T15:10:30Z" description="Verify Login" finished-at="2017-11-08T15:10:36Z">
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:main.ExampleTest@5f150435]" name="loginTest" duration-ms="4729" started-at="2017-11-08T15:23:57Z" description="Verify Login" finished-at="2017-11-08T15:24:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="FAIL" signature="createAccounts()[pri:3, instance:main.ExampleTest@6d00a15d]" name="createAccounts" duration-ms="10236" started-at="2017-11-08T15:10:36Z" description="Create Accounts in Salesforce" finished-at="2017-11-08T15:10:47Z">
+        <test-method status="FAIL" signature="createAccounts()[pri:2, instance:main.ExampleTest@5f150435]" name="createAccounts" duration-ms="10280" started-at="2017-11-08T15:24:02Z" description="Create Accounts in Salesforce" finished-at="2017-11-08T15:24:12Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for element to be clickable: By.cssSelector: #Account_Tab > a (tried for 10 second(s) with 500 MILLISECONDS interval)]]>
@@ -24,7 +24,7 @@
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: #Account_Tab > a (tried for 10 second(s) with 500 MILLISECONDS interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at main.ExampleTest.createAccounts(ExampleTest.java:55)
+	at main.ExampleTest.createAccounts(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -47,9 +47,8 @@
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
 	at org.testng.TestNG.runSuites(TestNG.java:1161)
 	at org.testng.TestNG.run(TestNG.java:1129)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.TestNG.privateMain(TestNG.java:1459)
+	at org.testng.TestNG.main(TestNG.java:1428)
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: #Account_Tab > a
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:26.402Z'
@@ -64,14 +63,18 @@ Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:643)
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:640)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 26 more
+	... 25 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccounts -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:main.ExampleTest@5f150435]" name="closeDriver" is-config="true" duration-ms="216" started-at="2017-11-08T15:24:12Z" finished-at="2017-11-08T15:24:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
       </class> <!-- main.ExampleTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Example tests -->
+  </suite> <!-- Example Test Suite -->
 </testng-results>

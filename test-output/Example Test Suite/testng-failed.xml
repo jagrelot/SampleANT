@@ -5,7 +5,9 @@
     <classes>
       <class name="main.ExampleTest">
         <methods>
+          <include name="closeDriver"/>
           <include name="createAccounts"/>
+          <include name="beforeTestsetUp"/>
         </methods>
       </class> <!-- main.ExampleTest -->
     </classes>

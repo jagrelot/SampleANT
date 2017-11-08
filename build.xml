@@ -27,7 +27,13 @@
    <path refid="classpath.base" />
    </path>
     
-   <target name="compile">
+   <target name="clean" >
+      <delete verbose="${full-compile}">
+         <fileset dir="${testdir}" includes="**/*.class" />
+      </delete>
+   </target>
+    
+   <target name="compile" depends="clean">
       <javac srcdir="${srcdir}" destdir="${testdir}" verbose="${full-compile}" includeantruntime="false" compiler="modern" >
          <classpath refid="classpath.test"/>
       </javac>

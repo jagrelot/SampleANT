@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Example Test Suite]" allow-return-values="true">
+  <test name="Example tests(failed)">
     <classes>
       <class name="main.ExampleTest">
         <methods>
+          <include name="closeDriver"/>
           <include name="createAccounts"/>
+          <include name="beforeTestsetUp"/>
         </methods>
       </class> <!-- main.ExampleTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Example tests(failed) -->
+</suite> <!-- Failed suite [Example Test Suite] -->
