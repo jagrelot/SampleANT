@@ -8,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
  
@@ -16,7 +15,7 @@ public class ExampleTest {
 	
 	public WebDriver chromeDriver;
     
-    @BeforeTest
+	@Test(priority=0,description="Setup Driver")
 	public void beforeTestsetUp(){
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\jagrelot\\Desktop\\chromedriver.exe");
