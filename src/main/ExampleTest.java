@@ -22,7 +22,7 @@ public class ExampleTest {
 	}
 	
 	@Test(priority=2,description="Verify Login")
-	public void loginTest(){
+	public void loginTest() throws Exception{
 		
 		WebElement  userName;
 		WebElement  passWord;
