@@ -8,21 +8,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
  
 public class ExampleTest {
 	
 	public WebDriver chromeDriver;
     
-	@Test(priority=0,description="Setup Driver")
+	@Test(priority=1,description="Setup Driver")
 	public void beforeTestsetUp(){
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\jagrelot\\Desktop\\chromedriver.exe");
 		chromeDriver = new ChromeDriver();
 	}
 	
-	@Test(priority=1,description="Verify Login")
+	@Test(priority=2,description="Verify Login")
 	public void loginTest(){
 		
 		WebElement  userName;
@@ -39,7 +38,7 @@ public class ExampleTest {
 	
 	}
 	
-	@Test(priority=2, description="Create Accounts in Salesforce")
+	@Test(priority=3, description="Create Accounts in Salesforce")
 	public void createAccounts(){
 		
 		WebElement    newBtn;
