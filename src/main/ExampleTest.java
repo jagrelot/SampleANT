@@ -17,7 +17,8 @@ public class ExampleTest {
 	@Test(priority=1,description="Setup Driver")
 	public void beforeTestsetUp(){
 		
-		System.setProperty("webdriver.chrome.driver", "../chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		System.out.println("Driver Created");
 		chromeDriver = new ChromeDriver();
 	}
 	
