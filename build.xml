@@ -12,10 +12,10 @@
  
     <property name="configdir" location="config" />
     <property name="testdir" location="test-output" />
-    <property name="srcdir" location="src" />
+    <property name="srcdir" location="src/main" />
     <property name="libdir" location="lib" />
     <property name="full-compile" value="false" />
-	<property name="debuglevel" value="source,lines,vars"/>
+
 	
    <path id="classpath.base"/>
    <path id="classpath.test">
@@ -35,7 +35,7 @@
    </target>
     
    <target name="compile" depends="clean">
-      <javac srcdir="${srcdir}" destdir="${testdir}" verbose="${full-compile}" includeantruntime="false" compiler="modern" debug="true" debuglevel="${debuglevel}" >
+      <javac srcdir="${srcdir}" destdir="${testdir}" verbose="${full-compile}" includeantruntime="false" compiler="modern" debug="true"  >
          <classpath refid="classpath.test"/>
       </javac>
    </target>

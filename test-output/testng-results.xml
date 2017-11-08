@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Example Test Suite" duration-ms="18150" started-at="2017-11-08T20:23:54Z" finished-at="2017-11-08T20:24:12Z">
+  <suite name="Example Test Suite" duration-ms="18936" started-at="2017-11-08T22:39:30Z" finished-at="2017-11-08T22:39:49Z">
     <groups>
     </groups>
-    <test name="Example tests" duration-ms="18150" started-at="2017-11-08T20:23:54Z" finished-at="2017-11-08T20:24:12Z">
+    <test name="Example tests" duration-ms="18936" started-at="2017-11-08T22:39:30Z" finished-at="2017-11-08T22:39:49Z">
       <class name="main.ExampleTest">
-        <test-method status="PASS" signature="beforeTestsetUp()[pri:0, instance:main.ExampleTest@5f150435]" name="beforeTestsetUp" is-config="true" duration-ms="2912" started-at="2017-11-08T15:23:54Z" finished-at="2017-11-08T15:23:57Z">
+        <test-method status="PASS" signature="beforeTestsetUp()[pri:1, instance:main.ExampleTest@47d384ee]" name="beforeTestsetUp" duration-ms="3043" started-at="2017-11-08T17:39:30Z" description="Setup Driver" finished-at="2017-11-08T17:39:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestsetUp -->
-        <test-method status="PASS" signature="loginTest()[pri:1, instance:main.ExampleTest@5f150435]" name="loginTest" duration-ms="4729" started-at="2017-11-08T15:23:57Z" description="Verify Login" finished-at="2017-11-08T15:24:02Z">
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:main.ExampleTest@47d384ee]" name="loginTest" duration-ms="5589" started-at="2017-11-08T17:39:33Z" description="Verify Login" finished-at="2017-11-08T17:39:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="FAIL" signature="createAccounts()[pri:2, instance:main.ExampleTest@5f150435]" name="createAccounts" duration-ms="10280" started-at="2017-11-08T15:24:02Z" description="Create Accounts in Salesforce" finished-at="2017-11-08T15:24:12Z">
+        <test-method status="FAIL" signature="createAccounts()[pri:3, instance:main.ExampleTest@47d384ee]" name="createAccounts" duration-ms="10288" started-at="2017-11-08T17:39:38Z" description="Create Accounts in Salesforce" finished-at="2017-11-08T17:39:49Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for element to be clickable: By.cssSelector: #Account_Tab > a (tried for 10 second(s) with 500 MILLISECONDS interval)]]>
@@ -24,7 +24,7 @@
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: #Account_Tab > a (tried for 10 second(s) with 500 MILLISECONDS interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at main.ExampleTest.createAccounts(Unknown Source)
+	at main.ExampleTest.createAccounts(ExampleTest.java:55)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -52,7 +52,7 @@
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: #Account_Tab > a
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:26.402Z'
-System info: host: 'ACUCLE-4ZDCRF2', ip: '10.171.93.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+System info: host: 'ACUCLE-4ZDCRF2', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)
 	at java.util.Optional.orElseThrow(Unknown Source)
@@ -70,10 +70,6 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccounts -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:main.ExampleTest@5f150435]" name="closeDriver" is-config="true" duration-ms="216" started-at="2017-11-08T15:24:12Z" finished-at="2017-11-08T15:24:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
       </class> <!-- main.ExampleTest -->
     </test> <!-- Example tests -->
   </suite> <!-- Example Test Suite -->
